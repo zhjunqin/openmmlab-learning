@@ -1,0 +1,133 @@
+# python tools/test.py rtmpose-s-ear.py  work_dirs/rtmpose-s-ear/best_PCK_epoch_300.pth
+06/04 00:23:52 - mmengine - INFO -
+------------------------------------------------------------
+
+06/04 00:24:00 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+06/04 00:24:00 - mmengine - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) RuntimeInfoHook
+(49          ) EMAHook
+(BELOW_NORMAL) LoggerHook
+ --------------------
+after_load_checkpoint:
+(49          ) EMAHook
+ --------------------
+before_train:
+(VERY_HIGH   ) RuntimeInfoHook
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+(VERY_LOW    ) CheckpointHook
+ --------------------
+before_train_epoch:
+(VERY_HIGH   ) RuntimeInfoHook
+(NORMAL      ) IterTimerHook
+(NORMAL      ) DistSamplerSeedHook
+(NORMAL      ) PipelineSwitchHook
+ --------------------
+before_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook
+(NORMAL      ) IterTimerHook
+ --------------------
+after_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+(BELOW_NORMAL) LoggerHook
+(LOW         ) ParamSchedulerHook
+(VERY_LOW    ) CheckpointHook
+ --------------------
+after_train_epoch:
+(NORMAL      ) IterTimerHook
+(LOW         ) ParamSchedulerHook
+(VERY_LOW    ) CheckpointHook
+ --------------------
+before_val_epoch:
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+ --------------------
+before_val_iter:
+(NORMAL      ) IterTimerHook
+ --------------------
+after_val_iter:
+(NORMAL      ) IterTimerHook
+(NORMAL      ) PoseVisualizationHook
+(BELOW_NORMAL) LoggerHook
+ --------------------
+after_val_epoch:
+(VERY_HIGH   ) RuntimeInfoHook
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+(BELOW_NORMAL) LoggerHook
+(LOW         ) ParamSchedulerHook
+(VERY_LOW    ) CheckpointHook
+ --------------------
+before_save_checkpoint:
+(49          ) EMAHook
+ --------------------
+after_train:
+(VERY_LOW    ) CheckpointHook
+ --------------------
+before_test_epoch:
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+ --------------------
+before_test_iter:
+(NORMAL      ) IterTimerHook
+ --------------------
+after_test_iter:
+(NORMAL      ) IterTimerHook
+(NORMAL      ) PoseVisualizationHook
+(BELOW_NORMAL) LoggerHook
+ --------------------
+after_test_epoch:
+(VERY_HIGH   ) RuntimeInfoHook
+(49          ) EMAHook
+(NORMAL      ) IterTimerHook
+(BELOW_NORMAL) LoggerHook
+ --------------------
+after_run:
+(BELOW_NORMAL) LoggerHook
+ --------------------
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+06/04 00:24:04 - mmengine - WARNING - The prefix is not set in metric class PCKAccuracy.
+06/04 00:24:04 - mmengine - WARNING - The prefix is not set in metric class AUC.
+06/04 00:24:04 - mmengine - WARNING - The prefix is not set in metric class NME.
+Loads checkpoint by local backend from path: work_dirs/rtmpose-s-ear/best_PCK_epoch_300.pth
+06/04 00:24:08 - mmengine - INFO - Load checkpoint from work_dirs/rtmpose-s-ear/best_PCK_epoch_300.pth
+06/04 00:24:11 - mmengine - INFO - Epoch(test) [1/6]    eta: 0:00:13  time: 2.693778  data_time: 1.267531  memory: 112
+06/04 00:24:11 - mmengine - INFO - Epoch(test) [2/6]    eta: 0:00:05  time: 1.355986  data_time: 0.635101  memory: 112
+06/04 00:24:12 - mmengine - INFO - Epoch(test) [3/6]    eta: 0:00:03  time: 1.226538  data_time: 0.740574  memory: 112
+06/04 00:24:13 - mmengine - INFO - Epoch(test) [4/6]    eta: 0:00:02  time: 1.205450  data_time: 0.836995  memory: 112
+06/04 00:24:14 - mmengine - INFO - Epoch(test) [5/6]    eta: 0:00:01  time: 1.204354  data_time: 0.906401  memory: 112
+06/04 00:24:14 - mmengine - INFO - Epoch(test) [6/6]    eta: 0:00:00  time: 1.052411  data_time: 0.801522  memory: 61
+06/04 00:24:14 - mmengine - INFO - Evaluating CocoMetric...
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *keypoints*
+DONE (t=0.01s).
+Accumulating evaluation results...
+DONE (t=0.00s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.761
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.945
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.761
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.781
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.952
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.781
+06/04 00:24:15 - mmengine - INFO - Evaluating PCKAccuracy (normalized by ``"bbox_size"``)...
+06/04 00:24:15 - mmengine - INFO - Evaluating AUC...
+06/04 00:24:15 - mmengine - INFO - Evaluating NME...
+06/04 00:24:15 - mmengine - INFO - Epoch(test) [6/6]    coco/AP: 0.761312  coco/AP .5: 1.000000  coco/AP .75: 0.945091  coco/AP (M): -1.000000  coco/AP (L): 0.761312  coco/AR: 0.780952  coco/AR .5: 1.000000  coco/AR .75: 0.952381  coco/AR (M): -1.000000  coco/AR (L): 0.780952  PCK: 0.978458  AUC: 0.115533  NME: 0.041582  data_time: 0.801522  time: 1.052411

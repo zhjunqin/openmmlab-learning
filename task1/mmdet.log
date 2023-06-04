@@ -1,0 +1,42 @@
+# python tools/test.py rtmdet_tiny_ear.py  work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_170.pth
+06/04 00:27:13 - mmengine - INFO -
+------------------------------------------------------------
+Loads checkpoint by local backend from path: work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_170.pth
+06/04 00:27:18 - mmengine - INFO - Load checkpoint from work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_170.pth
+/opt/conda/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525552843/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+06/04 00:27:20 - mmengine - INFO - Epoch(test) [ 1/11]    eta: 0:00:21  time: 2.1221  data_time: 0.6786  memory: 188
+06/04 00:27:20 - mmengine - INFO - Epoch(test) [ 2/11]    eta: 0:00:09  time: 1.0750  data_time: 0.3399  memory: 188
+06/04 00:27:20 - mmengine - INFO - Epoch(test) [ 3/11]    eta: 0:00:05  time: 0.7265  data_time: 0.2276  memory: 188
+06/04 00:27:20 - mmengine - INFO - Epoch(test) [ 4/11]    eta: 0:00:03  time: 0.5517  data_time: 0.1710  memory: 188
+06/04 00:27:20 - mmengine - INFO - Epoch(test) [ 5/11]    eta: 0:00:02  time: 0.4470  data_time: 0.1372  memory: 188
+06/04 00:27:21 - mmengine - INFO - Epoch(test) [ 6/11]    eta: 0:00:02  time: 0.4520  data_time: 0.1897  memory: 188
+06/04 00:27:21 - mmengine - INFO - Epoch(test) [ 7/11]    eta: 0:00:01  time: 0.3947  data_time: 0.1662  memory: 188
+06/04 00:27:21 - mmengine - INFO - Epoch(test) [ 8/11]    eta: 0:00:01  time: 0.4094  data_time: 0.2064  memory: 188
+06/04 00:27:22 - mmengine - INFO - Epoch(test) [ 9/11]    eta: 0:00:00  time: 0.3722  data_time: 0.1891  memory: 188
+06/04 00:27:22 - mmengine - INFO - Epoch(test) [10/11]    eta: 0:00:00  time: 0.3878  data_time: 0.2205  memory: 188
+06/04 00:27:22 - mmengine - INFO - Epoch(test) [11/11]    eta: 0:00:00  time: 0.3543  data_time: 0.2005  memory: 112
+06/04 00:27:22 - mmengine - INFO - Evaluating bbox...
+Loading and preparing results...
+DONE (t=0.09s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.11s).
+Accumulating evaluation results...
+DONE (t=0.01s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.817
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.966
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.966
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.817
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.855
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.855
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.855
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+06/04 00:27:22 - mmengine - INFO - bbox_mAP_copypaste: 0.817 0.966 0.966 -1.000 -1.000 0.817
+06/04 00:27:22 - mmengine - INFO - Epoch(test) [11/11]    coco/bbox_mAP: 0.8170  coco/bbox_mAP_50: 0.9660  coco/bbox_mAP_75: 0.9660  coco/bbox_mAP_s: -1.0000  coco/bbox_mAP_m: -1.0000  coco/bbox_mAP_l: 0.8170  data_time: 0.2005  time: 0.3543
