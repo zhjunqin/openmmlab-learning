@@ -26,7 +26,7 @@ Task 1 https://github.com/open-mmlab/OpenMMLabCamp/issues/85
 
 使用自己的耳朵预测
 
-[!](./ear_mmdet.jpg)
+![](./ear_mmdet.jpg)
 
 ## mmpose test log
 
@@ -50,4 +50,4 @@ Task 1 https://github.com/open-mmlab/OpenMMLabCamp/issues/85
 
 使用自己的耳朵预测
 
-[!](./ear_mmpose_heatmap.jpg)
+![](./ear_mmpose_heatmap.jpg)
