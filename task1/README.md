@@ -24,9 +24,11 @@ Task 1 https://github.com/open-mmlab/OpenMMLabCamp/issues/85
 
 ```
 
-使用自己的耳朵预测
+使用自己的耳朵预测：[预测图片](./ear_mmdet.jpg)
 
 ![](./ear_mmdet.jpg)
+
+
 
 ## mmpose test log
 
@@ -48,6 +50,6 @@ Task 1 https://github.com/open-mmlab/OpenMMLabCamp/issues/85
 06/04 00:24:15 - mmengine - INFO - Epoch(test) [6/6]    coco/AP: 0.761312  coco/AP .5: 1.000000  coco/AP .75: 0.945091  coco/AP (M): -1.000000  coco/AP (L): 0.761312  coco/AR: 0.780952  coco/AR .5: 1.000000  coco/AR .75: 0.952381  coco/AR (M): -1.000000  coco/AR (L): 0.780952  PCK: 0.978458  AUC: 0.115533  NME: 0.041582  data_time: 0.801522  time: 1.052411
 ```
 
-使用自己的耳朵预测
+使用自己的耳朵预测：[预测图片](./ear_mmpose_heatmap.jpg)
 
 ![](./ear_mmpose_heatmap.jpg)
