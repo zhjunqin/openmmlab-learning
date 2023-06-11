@@ -1,5 +1,13 @@
 # openmmlab-learning
 
+## Preprocess
+
+https://github.com/CrabBoss-lab/openmmlab-Camp/blob/master/03-mmdetection-task/3-json2coco.ipynb
+
+https://github.com/CrabBoss-lab/openmmlab-Camp/blob/master/03-mmdetection-task/1-pre_dataset.ipynb
+
+![](./vis0.png)
+
 ## Train
 
 ```
@@ -82,6 +90,4 @@ Image.open('output/resized_balloon_image_network.jpg')
 
 ![](./vis1.png)
 ![](./vis2.png)
-
-
 
