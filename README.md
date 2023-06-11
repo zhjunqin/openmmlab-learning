@@ -9,3 +9,7 @@ https://github.com/open-mmlab/OpenMMLabCamp/issues/85
 
 https://github.com/open-mmlab/OpenMMLabCamp/issues/107
 
+
+# Task 3
+
+https://github.com/open-mmlab/OpenMMLabCamp/issues/128
