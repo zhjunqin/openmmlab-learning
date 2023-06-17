@@ -5,7 +5,7 @@ https://github.com/open-mmlab/OpenMMLabCamp/issues/396
 # 代码
 
 ```
-prompt = 'Room with white walls and a yellow ceiling and red desk.'
+prompt = "xxx"
 
 control_img = mmcv.imread("room.jpg")
 control = cv2.Canny(control_img, 100, 200)
@@ -34,5 +34,14 @@ for idx, control in enumerate(controls):
 
 # ControlNet 图片
 
+```
+'Room with white walls and a yellow ceiling and red desk.'
+```
 ![](./room_controlnet.png)
+
+#
+```
+prompt = 'Room with romatic style and with sea side element.'
+```
+![](./room_controlnet2.png)
 
