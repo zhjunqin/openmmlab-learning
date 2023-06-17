@@ -17,3 +17,7 @@ https://github.com/open-mmlab/OpenMMLabCamp/issues/128
 # Task 4
 
 https://github.com/open-mmlab/OpenMMLabCamp/issues/145
+
+# Task 5
+
+https://github.com/open-mmlab/OpenMMLabCamp/issues/396
